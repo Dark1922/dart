@@ -9,7 +9,7 @@ void main(List<String> arguments) {
   print(a + b);
 
   double altura = 1.72;
-  print('Altura: ${altura}');
+  print('Altura: $altura');
 
   double mil = 780e6;
   print(mil);
@@ -19,4 +19,16 @@ void main(List<String> arguments) {
   bool boolean = true;
 
   print(boolean);
+
+
+  int idade = 23;
+  double altura1 = 1.86;
+  bool geek = true;
+  String apelido = 'Dark';
+  String nome = 'João Victor Martins';
+
+  print('Eu sou $apelido, mas \n'
+  'meu nome completo é: $nome, eu me considero geek? $geek. \n'
+  'Eu tenho $altura metros de altura e \n '
+  '$idade anos de idade');
 }
