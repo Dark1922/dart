@@ -7,4 +7,10 @@ void main(List<String> arguments) {
   int b = 30;
 
   print(a + b);
+
+  double altura = 1.72;
+  print('Altura: ${altura}');
+
+  double mil = 780e6;
+  print(mil);
 }
