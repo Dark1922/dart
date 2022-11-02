@@ -23,12 +23,23 @@ void main(List<String> arguments) {
   int idade = 23;
   bool geek = true;
   String apelido = 'Dark';
-  String nome = 'João Victor Martins';
+  String nome = 'João Victor Martins de matos';
+  double altura1 = 1.72;
+  String profissao = 'Java Developer';
 
-  print('Eu sou $apelido, mas \n'
-      'meu nome completo é: $nome, eu me considero geek? $geek. \n'
-      'Eu tenho $altura metros de altura e \n '
-      '$idade anos de idade');
+  List<dynamic> jhon = [ //dynamic pode usar qualquer tipo , mas não é recomendado usar muito
+    geek,
+    idade,
+    altura1,
+    apelido,
+    profissao,
+    nome
+  ];
+
+  print('Eu sou ${jhon[3]}, mas \n'
+      'meu nome completo é: ${jhon[5]}, eu me considero geek? ${jhon[0]}. \n'
+      'Eu tenho ${jhon[2]} metros de altura e tenho \n '
+      '${jhon[1]} anos de idade');
 
   String nome1 = 'a';
   String nome2 = 'b';
@@ -36,7 +47,12 @@ void main(List<String> arguments) {
   String nome4 = 'd';
   String nome5 = 'e';
 
-  List<String> listaNomes = ['ana', 'joao', 'natalia','alex','ricardo'];
+  List<String> listaNomes = ['ana', 'joao', 'natalia', 'alex', 'ricardo'];
   print(listaNomes.length);
   print(listaNomes[0]);
+
+
+
+  //link útil sobre funções da lista
+  //https://codeburst.io/top-10-array-utility-methods-you-should-know-dart-feb2648ee3a2
 }
