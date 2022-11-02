@@ -8,27 +8,35 @@ void main(List<String> arguments) {
 
   print(a + b);
 
-  double altura = 1.72;
+  double altura = 1.30;
   print('Altura: $altura');
 
   double mil = 780e6;
   print(mil);
 
-  print(a == 20 ? 'verdade birl' : 'ksks');
+  print(a == 20 ? 'verdade ' : 'falso');
 
   bool boolean = true;
 
   print(boolean);
 
-
   int idade = 23;
-  double altura1 = 1.86;
   bool geek = true;
   String apelido = 'Dark';
   String nome = 'João Victor Martins';
 
   print('Eu sou $apelido, mas \n'
-  'meu nome completo é: $nome, eu me considero geek? $geek. \n'
-  'Eu tenho $altura metros de altura e \n '
-  '$idade anos de idade');
+      'meu nome completo é: $nome, eu me considero geek? $geek. \n'
+      'Eu tenho $altura metros de altura e \n '
+      '$idade anos de idade');
+
+  String nome1 = 'a';
+  String nome2 = 'b';
+  String nome3 = 'c';
+  String nome4 = 'd';
+  String nome5 = 'e';
+
+  List<String> listaNomes = ['ana', 'joao', 'natalia','alex','ricardo'];
+  print(listaNomes.length);
+  print(listaNomes[0]);
 }
