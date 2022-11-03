@@ -61,7 +61,9 @@ void main(List<String> arguments) {
   }
   print(maiorDeIdade);
 
-
+  for(int i = 0; i <=10; i++) {
+    print(i);
+  }
   //link útil sobre funções da lista
   //https://codeburst.io/top-10-array-utility-methods-you-should-know-dart-feb2648ee3a2
 }
