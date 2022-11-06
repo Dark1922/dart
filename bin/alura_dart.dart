@@ -64,6 +64,58 @@ void main(List<String> arguments) {
   for(int i = 0; i <=10; i++) {
     print(i);
   }
+
+  int quantidadeDeCarrosParaEstacionar = 59;
+  var i;
+  while(quantidadeDeCarrosParaEstacionar >=0){
+    print('Carros que faltam estacionar  ${quantidadeDeCarrosParaEstacionar--}' );
+  }
+
+  var grade = "A";
+
+  switch (grade) {
+    case "A":
+      {
+        print("Excellent");
+      }
+      break;
+
+    case "B":
+      {
+        print("Good");
+      }
+      break;
+
+    case "C":
+      {
+        print("Fair");
+      }
+      break;
+
+    case "D":
+      {
+        print("Poor");
+      }
+      break;
+
+    default:
+      {
+        print("Invalid choice");
+      }
+      break;
+  }
+
+  int count = 1;
+
+  while (count <= 10) {
+    print("Geek, you are inside loop $count");
+    count++;
+
+    if (count == 4) {
+      break;
+    }
+  }
+  print("Geek, you are out of while loop");
   //link útil sobre funções da lista
   //https://codeburst.io/top-10-array-utility-methods-you-should-know-dart-feb2648ee3a2
 }
