@@ -14,7 +14,8 @@ void main() {
 
   print(funcQuantosDiasMadura(diaDesdeColheita));
 
-
+  Fruta fruta = Fruta(nome, peso, cor, sabor, diaDesdeColheita);
+  print(fruta);
 }
 
 //Posicionais Obrigatórios String nome
@@ -46,7 +47,16 @@ bool funcEstaMadura(int dias) {
 int funcQuantosDiasMadura(int dias) {
   int diasParaMadura = 30;
   int quatosDiasFaltam =  dias - diasParaMadura;
-
   return quatosDiasFaltam;
+}
 
+class Fruta{
+  String nome;
+  double peso;
+  String cor;
+  String sabor;
+  int diaDesdeColheita;
+  bool ?isMadura; //opcional
+
+  Fruta(this.nome, this.peso , this.cor,  this.sabor, this.diaDesdeColheita, {this.isMadura});
 }
